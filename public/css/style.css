@@ -1,0 +1,78 @@
+.container-fluid btn-group{
+    padding-left: 62px;
+    padding-right: 0px;
+}
+
+.row{
+    padding-top: 50px;
+}
+
+.fa-5x{
+    padding: 15px 0px;
+}
+
+.col-xs-6 col-md-3{
+    padding-left: 0px;
+}
+
+.content{
+    margin:100px 0px;
+    text-align:center;
+    font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    font-size:55px;
+}
+.content p{
+    font-size:30px;
+    color:#004567;
+    width:800px;
+    margin:0 auto;
+}
+
+
+.control-label{
+    width: 90px;
+}
+
+.col-sm-offset-2{
+    margin: 0px 89px;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+    position: relative;
+    min-height: 100%;
+}
+body {
+    /* Margin bottom by footer height */
+    margin-bottom: 60px;
+}
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    /* Set the fixed height of the footer here */
+    height: 60px;
+    background-color: #f5f5f5;
+}
+
+
+/* Custom page CSS
+-------------------------------------------------- */
+/* Not required for template or sticky footer method. */
+
+body > .container {
+    padding: 15px 15px 0;
+}
+.container .text-muted {
+    margin: 20px 0;
+}
+
+.footer > .container {
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+code {
+    font-size: 80%;
+}
