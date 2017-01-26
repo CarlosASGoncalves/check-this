@@ -8,7 +8,7 @@
 
             <div class="well well-sm text-center">
 
-                <h1>PHP/MySQL File Repository</h1>
+                <h1>Upload File with PHP & MySQL</h1>
 
             </div>
 
@@ -37,11 +37,11 @@
 
                 <div class="form-group">
 
-                    <input type="text" class="form-control" id="desc" name="desc" maxlength="255" placeholder="File Description" required />
+                    <input type="text" class="form-control" id="desc" name="desc" maxlength="255" placeholder="File Description" required /> <!--todo: use htmlspecialchars-->
 
                 </div>
 
-                <div class="clearfix"><hr />
+                <div class="clearfix"></div><hr />
 
                 <div class="form-group">
 

@@ -3,29 +3,39 @@
 namespace App\Core\Database;
 
 use PDO;
+use PDOException;
+use App\Core\App;
 
 class QueryBuilder{
 
 	protected $pdo;
 
-	public function __construct($pdo)
-	{
+	public function __construct($pdo){
+
 		$this->pdo  = $pdo;
-	}
-
-	//public function selectAll($table, $intoClass){ //parameter $intoClass used to name class for PDO Mapping
-	
-	public function selectAll($table){
-
-		$statement = $this->pdo->prepare("select * from {$table}");
-
-		$statement->execute();
-
-		//return $statement->fetchAll(PDO::FETCH_CLASS, $intoClass); //Mapp PDO object to Task Class
-
-		return $statement->fetchAll(PDO::FETCH_CLASS);
 
 	}
+
+    public function selectAll($table){
+
+	    try{
+
+	        $statement = $this->pdo->prepare("select * from {$table}");
+
+		    $statement->execute();
+
+
+        }catch(PDOException $e){
+
+                App::get('logger')->err($e->getMessage());
+
+                die('Whoops, something went wrong.');
+
+        }
+
+        return $statement->fetchAll(PDO::FETCH_CLASS);
+
+    }
 
 	public function insertUser($table, $parameters)
 	{
@@ -57,11 +67,12 @@ class QueryBuilder{
 
 			$statement->execute($parameters);
 
-		}catch(Exception $e){
+		}catch(PDOException $e){
 
-//			die('Whoops, something went wrong.');
+            App::get('logger')->err($e->getMessage());
 
-			die($e->getMessage());
+            die('Whoops, something went wrong.');
+
 		}
 
 	}
@@ -87,11 +98,11 @@ class QueryBuilder{
 
             $statement->execute($parameters);
 
-        } catch (Exception $e) {
+        } catch (PDOException $e) {
 
-//            die('Whoops, something went wrong.');
+            App::get('logger')->err($e->getMessage());
 
-			die($e->getMessage());
+            die('Whoops, something went wrong.');
         }
 
     }
@@ -99,6 +110,7 @@ class QueryBuilder{
 
     public function selectFiles( $table, $parameters )
     {
+
         $sql = sprintf(
 
             'select %s from %s',
@@ -115,15 +127,16 @@ class QueryBuilder{
 
             $statement->execute($parameters);
 
-        } catch (Exception $e) {
+        } catch (PDOExceptionn $e) {
+
+            App::get('logger')->err($e->getMessage());
 
             die('Whoops, something went wrong.');
-
-//			die($e->getMessage());
 
         }
 
         return $statement->fetchAll(PDO::FETCH_CLASS);
+
     }
 
     public function deleteFile( $table, $parameters)
@@ -145,11 +158,11 @@ class QueryBuilder{
 
             $statement->execute($parameters);
 
-        }catch(Exception $e){
+        }catch(PDOException $e){
 
-//            die('Whoops, something went wrong.');
+            App::get('logger')->err($e->getMessage());
 
-            die($e->getMessage());
+            die('Whoops, something went wrong.');
         }
 
     }
@@ -159,8 +172,8 @@ class QueryBuilder{
 
         $sql = "SELECT * FROM {$table} WHERE user_name = :user_name or user_email = :user_email LIMIT 1";
 
-        try
-        {
+        try{
+
             $statement = $this->pdo->prepare($sql);
 
             $statement->bindParam(':user_name', $user_name, PDO::PARAM_STR, 60);
@@ -171,10 +184,12 @@ class QueryBuilder{
 
             return $statement;
 
-        }
-        catch(PDOException $e)
-        {
-            echo $e->getMessage();
+        }catch(PDOException $e){
+
+            App::get('logger')->err($e->getMessage());
+
+            die('Whoops, something went wrong.');
+
         }
 
     }
@@ -184,11 +199,20 @@ class QueryBuilder{
 
         $sql = "SELECT * FROM {$table} WHERE user_id = :user_id";
 
-        $statement = $this->pdo->prepare($sql);
+        try{
+            $statement = $this->pdo->prepare($sql);
 
-        $statement->execute(array(":user_id"=>$user_id));
+            $statement->execute(array(":user_id" => $user_id));
 
-        return $statement->fetch(PDO::FETCH_ASSOC);
+            return $statement->fetch(PDO::FETCH_ASSOC);
+
+        }catch(PDOException $e){
+
+            App::get('logger')->err($e->getMessage());
+
+            die('Whoops, something went wrong.');
+
+        }
 
     }
 

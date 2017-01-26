@@ -41,8 +41,6 @@ class Router
 	public function direct($uri, $requestType)
 	{
 
-//        var_dump($this->routes[$requestType][$uri]);
-
 	    if(array_key_exists($uri, $this->routes[$requestType])){
 
 		    return $this->callAction(
@@ -61,15 +59,9 @@ class Router
 	protected function callAction($controller, $action)
 	{
 
-//		$controller = new $controller;
-
 		$controller = "App\\Controllers\\{$controller}";
 
 		$controller = new $controller;
-
-//        var_dump($action);
-//        exit;
-
 
         if(!method_exists($controller, $action)){
 
@@ -80,7 +72,6 @@ class Router
 			);
 
 		}
-
 
 		return $controller->$action();
 

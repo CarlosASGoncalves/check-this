@@ -8,7 +8,7 @@
 
             <div class="well well-sm text-center">
 
-                <h1>Login with PHP & MySQL</h1>
+                <h1>Sign In with PHP & MySQL</h1>
 
             </div>
 
@@ -36,13 +36,13 @@
 
                     <div class="form-group">
 
-                        <input type="text" class="form-control" name="txt_uname_email" placeholder="Username or Email" required />
+                        <input type="text" class="form-control" name="txt_uname_email" placeholder="Username or Email" required /> <!--todo: use htmlspecialchars-->
 
                     </div>
 
                     <div class="form-group">
 
-                        <input type="password" class="form-control" name="txt_password" placeholder="Your Password" required />
+                        <input type="password" class="form-control" name="txt_password" placeholder="Your Password" required /> <!--todo: use htmlspecialchars-->
 
                     </div>
 

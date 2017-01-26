@@ -1,0 +1,6 @@
+[2017-01-26 00:48:03] devlog.ERROR: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'todo' in 'field list' [] []
+[2017-01-26 00:51:38] devlog.ERROR: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'todo' in 'field list' [] []
+[2017-01-26 00:58:17] devlog.ERROR: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'todo' in 'field list' [] []
+[2017-01-26 00:58:25] devlog.ERROR: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'todo' in 'field list' [] []
+[2017-01-26 01:01:11] devlog.ERROR: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'todo' in 'field list' [] []
+[2017-01-26 02:01:20] devlog.ERROR: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'todo' in 'field list' [] []

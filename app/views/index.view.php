@@ -2,9 +2,9 @@
 
 <div class="container marketing text-center">
 
-    <h1>What do you know about Carlos</h1>
+    <h1>What do you know about Check This!</h1>
 
-    <p class="lead">This project is a tool to demonstrate my skills</p>
+    <p class="lead">Go further and see what you can do</p>
 
     <div class="row">
 
@@ -21,7 +21,7 @@
 
                     <p>...</p>
 
-                    <a href="#" class="btn btn-default" role="button">More</a></p>
+                    <a href="upload" class="btn btn-default" role="button">More</a></p>
 
                 </div>
 
@@ -39,7 +39,7 @@
 
                 <div class="caption">
 
-                    <h3>Users List</h3>
+                    <h3>Managing Names</h3>
 
                     <p>...</p>
 
@@ -60,11 +60,11 @@
 
                 <div class="caption">
 
-                    <h3>Login</h3>
+                    <h3>Sign In</h3>
 
                     <p>...</p>
 
-                    <a href="#" class="btn btn-default" role="button">More</a></p>
+                    <a href="login" class="btn btn-default" role="button">More</a></p>
 
                 </div>
 

@@ -8,7 +8,7 @@
 
             <div class="well well-sm text-center">
 
-                <h1>Names List with PHP & MySQL</h1>
+                <h1>Save Names with PHP & MySQL</h1>
 
             </div>
 
@@ -30,7 +30,7 @@
 
                     <div class="form-group">
 
-                        <input type="text" class="form-control" name="name" placeholder="Save Your Name" required />
+                        <input type="text" class="form-control" name="name" placeholder="Save Your Name" required /> <!--todo: use htmlspecialchars-->
 
                     </div>
 

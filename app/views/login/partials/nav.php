@@ -6,19 +6,7 @@
 
             <div class="navbar-header">
 
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-
-                    <span class="sr-only">Toggle navigation</span>
-
-                    <span class="icon-bar"></span>
-
-                    <span class="icon-bar"></span>
-
-                    <span class="icon-bar"></span>
-
-                </button>
-
-                <a class="navbar-brand" href="#">Check this!</a>
+                <a class="navbar-brand" href="/">Check This!</a>
 
                 <div class="container-fluid btn-group">
 
@@ -26,9 +14,9 @@
 
                         <li><a href="/">Home</a></li>
 
-                        <li><a href="/about">About</a></li>
+                        <li><a href="about">About</a></li>
 
-                        <li><a href="/contact">Contact</a></li>
+                        <li><a href="contact">Contact</a></li>
 
                     </ul>
 
@@ -44,17 +32,17 @@
 
                             <ul class="dropdown-menu" aria-labelledby="drop3">
 
-                                <li><a href="/users">Manage Users</a></li>
+                                <li><a href="users">Manage Names</a></li>
 
-                                <li><a href="/upload">Manage Files</a></li>
+                                <li><a href="upload">Manage Files</a></li>
 
-                                <?php if(isset($_SESSION['user_session'])): ?>
+                                <?php if(!isset($_SESSION['user_session'])): ?>
 
-                                    <li><a href="/logout">Logout</a></li>
+                                    <li><a href="login">Sign-in</a></li>
 
                                 <?php else: ?>
 
-                                    <li><a href="/login">Login</a></li>
+                                    <li><a href="logout">Sign-out</a></li>
 
                                 <?php endif; ?>
                             </ul>

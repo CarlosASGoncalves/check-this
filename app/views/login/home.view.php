@@ -8,7 +8,7 @@
 
             <div class="well well-sm">
 
-                <h1>Login with PHP & MySQL</h1>
+                <h1>Sign Out with PHP & MySQL</h1>
 
             </div>
 
@@ -18,7 +18,7 @@
 
             </div>
 
-            <label><a href="logout"><i class="glyphicon glyphicon-log-out"></i> LOGOUT</a></label>
+            <label><a href="logout"><i class="glyphicon glyphicon-log-out"></i> SIGN OUT</a></label>
 
         </div>
 

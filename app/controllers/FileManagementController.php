@@ -14,8 +14,6 @@ class FileManagementController
 {
     public function uploads()
     {
-//        var_dump($_POST['upload']);
-//        exit;
 
         if (!is_uploaded_file($_FILES['upload']['tmp_name'])) {
             throw new \Exception('There was no file uploaded!');
@@ -50,8 +48,6 @@ class FileManagementController
 
     public function delete()
     {
-//        var_dump($_POST['id']);
-//        die('fuck');
 
         if($_POST['delete'] == 'delete' and isset($_POST['id'])) {
 
