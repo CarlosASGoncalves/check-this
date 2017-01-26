@@ -15,9 +15,9 @@ return [
 
 	'database' => [
 
-		'dbuser' => 'root',
+		'dbuser' => '',
 
-		'pass' => '123',
+		'pass' => '',
 
 		'port' => '3306',
 
