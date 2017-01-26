@@ -1,4 +1,4 @@
-<?php require('partials/head.php'); ?>
+<?php require(__DIR__. '/../../partials/head.php'); ?>
 
 <div class="container">
 
@@ -69,5 +69,5 @@
 
 </div>
 
-<?php require('partials/footer.php');
+<?php require(__DIR__. '/../../partials/footer.php');
 

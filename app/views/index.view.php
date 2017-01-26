@@ -21,7 +21,7 @@
 
                     <p>...</p>
 
-                    <a href="upload" class="btn btn-default" role="button">More</a></p>
+                    <a href="../../index.php" class="btn btn-default" role="button">More</a></p>
 
                 </div>
 
@@ -43,7 +43,7 @@
 
                     <p>...</p>
 
-                    <a href="users" class="btn btn-default" role="button">More</a></p>
+                    <a href="../../index.php" class="btn btn-default" role="button">More</a></p>
 
                 </div>
 
@@ -64,7 +64,7 @@
 
                     <p>...</p>
 
-                    <a href="login" class="btn btn-default" role="button">More</a></p>
+                    <a href="pages/login" class="btn btn-default" role="button">More</a></p>
 
                 </div>
 

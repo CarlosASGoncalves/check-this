@@ -1,0 +1,39 @@
+Project in General
+
+	Check This! was built with PHP, MySQL and Boopstrap; following the PSR1-4 code standards, .
+
+	The Frontend is based on Bootstrap, the html css javascript framwork.
+
+	On the Backend we have a costum php framwork based on the MVC model.
+
+	Puphpet helped create the proper dev enviorment to create this project.
+	
+	The Applications are simple and are base on code examples that where found in the internet and books.  
+	
+	Bplaced was the therd party hosting solution choosed to publicate the project. 
+
+	Localy the project was developed with php7.0 but some adaptations on the code had to be made because bplaced suppoerts php5.5. 
+	
+	Check the project built with php7.0 on my GitHub Account.  
+
+Home Page
+	
+	Have a header to start the presentation
+	
+	The bootstrap .row and grid system helps order the thumbnails for the tree apps
+
+About Page
+
+	Simple page with project description in detail
+
+Contact
+
+	Contact form that accepts name email text and result of 2+3  as anti-spam mecanism to garantie that the form is used by a human and not a robot.
+
+	Use of php email() to send Demo Contact Form to the admin.
+
+Manage users
+
+	this app will save names and display the saved name in the data base in the names table
+
+Manage

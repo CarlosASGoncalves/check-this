@@ -1,4 +1,4 @@
-<?php require('partials/head.php'); ?>
+<?php require(__DIR__. '/../partials/head.php'); ?>
 
 <div class="container">
 
@@ -12,7 +12,7 @@
 
             </div>
 
-            <form action="upload_file" method="POST" enctype="multipart/form-data">
+            <form action="../../../index.php" method="POST" enctype="multipart/form-data">
 
                 <div class="form-group">
 
@@ -81,7 +81,7 @@
                                     <td><?= $f->mimetype; ?></td>
                                     <td><?= $f->description; ?></td>
                                     <td>
-                                        <form action="delete" method="POST">
+                                        <form action="../../../index.php" method="POST">
                                             <div>
                                                 <input type="hidden" name="delete" value="delete" />
                                                 <input type="hidden" name="id" value="<?= $f->id; ?>"/>
@@ -104,4 +104,4 @@
 
 </div>
 
-<?php require('partials/footer.php');
+<?php require(__DIR__. '/../partials/footer.php');

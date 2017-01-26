@@ -1,4 +1,4 @@
-<?php require('partials/head.php'); ?>
+<?php require(__DIR__. '/../../partials/head.php'); ?>
 
 <div class="container text-center">
 
@@ -18,7 +18,7 @@
 
             </div>
 
-            <label><a href="logout"><i class="glyphicon glyphicon-log-out"></i> SIGN OUT</a></label>
+            <label><a href="../../../../index.php"><i class="glyphicon glyphicon-log-out"></i> SIGN OUT</a></label>
 
         </div>
 
@@ -26,4 +26,4 @@
 
 </div>
 
-<?php require('partials/footer.php');
+<?php require(__DIR__. '/../../partials/footer.php');

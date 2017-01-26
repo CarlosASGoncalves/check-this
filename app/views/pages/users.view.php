@@ -1,4 +1,4 @@
-<?php require('partials/head.php'); ?>
+<?php require(__DIR__. '/../partials/head.php'); ?>
 
 <div class="container">
 
@@ -26,7 +26,7 @@
 
             <div class="form-container">
 
-                <form method="post" action="/users">
+                <form method="post" action="../../../index.php">
 
                     <div class="form-group">
 
@@ -57,4 +57,4 @@
 </div>
 
 
-<?php require('partials/footer.php');
+<?php require(__DIR__. '/../partials/footer.php');

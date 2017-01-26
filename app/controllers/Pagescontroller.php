@@ -11,7 +11,7 @@ class Pagescontroller extends User
     public function home()
     {
        
-       return view('index');  
+       return view('pages/index');
         
     }
 
@@ -20,21 +20,21 @@ class Pagescontroller extends User
 
         $label = 'Check This!';
 
-        return view('about', ['label' => $label]);
+        return view('pages/about', ['label' => $label]);
     
     }
 
     public function contact()
     {
 
-        return view('contact');
+        return view('pages/contact');
 
     }
 
     public function users()
     {
 
-        return view('users');
+        return view('pages/users');
 
 
     }
@@ -42,7 +42,7 @@ class Pagescontroller extends User
     public function upload()
     {
 
-        return view('upload');
+        return view('pages/upload');
 
 
     }
@@ -50,7 +50,7 @@ class Pagescontroller extends User
     public function login()
     {
 
-        return view('login/index');
+        return view('pages/login/index');
 
     }
 

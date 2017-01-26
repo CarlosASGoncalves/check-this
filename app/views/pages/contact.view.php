@@ -1,4 +1,4 @@
-<?php require('partials/head.php'); ?>
+<?php require(__DIR__. '/../partials/head.php'); ?>
 
 <div class="container">
 
@@ -8,7 +8,7 @@
 
             <h1 class="page-header text-center">Contact Form</h1>
 
-            <form class="form-horizontal" role="form" method="post" action="contact">
+            <form class="form-horizontal" role="form" method="post" action="../../../index.php">
 
                 <div class="form-group">
 
@@ -88,4 +88,4 @@
 
 </div>
 
-<?php require('partials/footer.php');
+<?php require(__DIR__. '/../partials/footer.php');
