@@ -15,13 +15,13 @@ return [
 
 	'database' => [
 
-		'dbuser' => 'root',
+		'dbuser' => '',
 
-		'pass' => '123',
+		'pass' => '',
 
 		'port' => '3306',
 
-		'dbname' => 'check_this',
+		'dbname' => '',
 
 		'host' => 'mysql:host=127.0.0.1',
 
