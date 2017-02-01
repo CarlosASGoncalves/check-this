@@ -3,6 +3,8 @@
 //psr2 coding standart
 namespace App\Core;
 
+use Exception;
+
 class App
 {
 
@@ -19,13 +21,12 @@ class App
     {
         if (! array_key_exists($key, static::$registry)){
 
-            throw new Exeption("No {$key} is bound in the container.");
+            throw new Exception("No {$key} is bound in the container.");
 
         }
 
         return static::$registry[$key];
 
     }
-
 
 }

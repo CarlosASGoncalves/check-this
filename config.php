@@ -1,24 +1,37 @@
-<?php 
+<?php
+
+use Monolog\Logger;
+use Monolog\Handler\StreamHandler;
+use Monolog\Handler\FirePHPHandler;
+
+// Create the logger
+$logger = new Logger('devlog');
+
+// Now add some handlers
+$logger->pushHandler(new StreamHandler(__DIR__ . '/log/dev.log', Logger::ERROR));
+$logger->pushHandler(new FirePHPHandler());
 
 return [
 
 	'database' => [
 
-		'dbuser' => 'root', //root for vm(s)
+		'dbuser' => '',
 
-		'pass' => '123',
+		'pass' => '',
 
 		'port' => '3306',
 
-		'dbname' => 'todos', //todos for vm(s)
+		'dbname' => '',
 
 		'host' => 'mysql:host=127.0.0.1',
 
 		'options' => [
 
-			PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION
+            PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION
 
 		]
-	]
+	],
+
+    'logger' => $logger
 
 ];

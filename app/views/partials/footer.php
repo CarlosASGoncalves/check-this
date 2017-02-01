@@ -2,7 +2,7 @@
 
     <div class="container text-center">
 
-        <p class="text-muted">Place sticky footer content here.</p>
+        <p class="text-muted">Check This! Footer Content.</p>
 
     </div>
 

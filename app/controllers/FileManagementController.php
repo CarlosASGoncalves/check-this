@@ -12,10 +12,17 @@ use App\Core\App;
 
 class FileManagementController
 {
+
+    public function index()
+    {
+        $files = App::get('database')->selectFiles('filestore', ['id', 'filename', 'mimetype', 'description']);
+
+        return view('pages/upload/index', compact('files'));
+
+    }
+
     public function uploads()
     {
-//        var_dump($_POST['upload']);
-//        exit;
 
         if (!is_uploaded_file($_FILES['upload']['tmp_name'])) {
             throw new \Exception('There was no file uploaded!');
@@ -39,19 +46,8 @@ class FileManagementController
 
     }
 
-    public function index()
-    {
-        $files = App::get('database')->selectFiles('filestore', ['id', 'filename', 'mimetype', 'description']);
-
-        return view('upload', compact('files'));
-
-    }
-
-
     public function delete()
     {
-//        var_dump($_POST['id']);
-//        die('fuck');
 
         if($_POST['delete'] == 'delete' and isset($_POST['id'])) {
 

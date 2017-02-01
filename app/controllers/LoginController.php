@@ -21,7 +21,7 @@ class LoginController extends User
 
         if ($this->is_loggedin() != "") {
 
-            redirect('home');
+            redirect('pages/login/home');
 
         }
 
@@ -42,7 +42,7 @@ class LoginController extends User
             }
         }
 
-        return view( 'login/index', ['error' => $error] ) ;
+        return view( 'pages/login/index', ['error' => $error] ) ;
 
     }
 
@@ -58,7 +58,7 @@ class LoginController extends User
 
         $user = App::get('database')->selectUser( 'login', $user_id);
 
-        return view('login/home', compact('user'));
+        return view('pages/login/home', compact('user'));
 
     }
 

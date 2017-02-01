@@ -1,74 +1,62 @@
 <nav class="navbar navbar-default navbar-static-top">
 
-    <div class="container">
+<div class="container">
 
-        <div class="col-md-6 col-md-offset-3">
+    <div class="col-md-6 col-md-offset-3">
 
-            <div class="navbar-header">
+        <div class="navbar-header">
 
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <div class="container-fluid btn-group">
 
-                    <span class="sr-only">Toggle navigation</span>
+                <ul class="nav navbar-nav">
 
-                    <span class="icon-bar"></span>
+                    <li><a class="navbar-brand" href="/">Check This!</a></li>
 
-                    <span class="icon-bar"></span>
+                    <li><a href="/">Home</a></li>
 
-                    <span class="icon-bar"></span>
+                    <li><a href="about">About</a></li>
 
-                </button>
+                    <li><a href="contact">Contact</a></li>
 
-                <a class="navbar-brand" href="#">Check this!</a>
+                </ul>
 
-                <div class="container-fluid btn-group">
+                <ul class="nav navbar-nav">
 
-                    <ul class="nav navbar-nav">
+                    <li id="fat-menu" class="dropdown">
 
-                        <li><a href="/">Home</a></li>
+                        <a href="#" class="dropdown-toggle" id="drop3" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
 
-                        <li><a href="/about">About</a></li>
+                            WebApps  <span class="caret"></span>
 
-                        <li><a href="/contact">Contact</a></li>
+                        </a>
 
-                    </ul>
+                        <ul class="dropdown-menu" aria-labelledby="drop3">
 
-                    <ul class="nav navbar-nav">
+                            <li><a href="users">Manage Names</a></li>
 
-                        <li id="fat-menu" class="dropdown">
+                            <li><a href="upload">Manage Files</a></li>
 
-                            <a href="#" class="dropdown-toggle" id="drop3" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                            <?php if(!isset($_SESSION['user_session'])): ?>
 
-                                Apps
+                                <li><a href="login">Sign-in</a></li>
 
-                                <span class="caret"></span> </a>
+                            <?php else: ?>
 
-                            <ul class="dropdown-menu" aria-labelledby="drop3">
+                                <li><a href="logout">Sign-out</a></li>
 
-                                <li><a href="/users">Manage Users</a></li>
+                            <?php endif; ?>
+                        </ul>
 
-                                <li><a href="/upload">Manage Files</a></li>
+                    </li>
 
-                                <?php if(isset($_SESSION['user_session'])): ?>
-
-                                    <li><a href="/logout">Logout</a></li>
-
-                                <?php else: ?>
-
-                                    <li><a href="/login">Login</a></li>
-
-                                <?php endif; ?>
-                            </ul>
-
-                        </li>
-
-                    </ul>
-
-                </div>
+                </ul>
 
             </div>
 
         </div>
 
     </div>
+
+</div>
 
 </nav>

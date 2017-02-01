@@ -41,7 +41,7 @@ class ContactController extends Mailer
 
             $result = $this->sendemail($to, "$subject", $body, $from, $errHuman);
 
-            return view('contact', [
+            return view('pages/contact', [
 
                 'name' => $name,
 

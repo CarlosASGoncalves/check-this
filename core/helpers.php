@@ -10,7 +10,7 @@
 function view($controller, $data = [])
 {
 
-    extract($data);// turns ['name' => 'joe'] into $name = 'joe' and than the view can use the $name variable to disply data. Probelm with colision
+    extract($data);
 
     return require "app/views/{$controller}.view.php";
 

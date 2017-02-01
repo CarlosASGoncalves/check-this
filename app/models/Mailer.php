@@ -14,7 +14,7 @@ class Mailer
     public function sendemail($to, $subject, $body, $from, $errHuman)
     {
 
-        // If there are no errors, send the email
+        // If there are no human errors, send the email
         if (empty($errHuman)) {
 
             if (mail ($to, $subject, $body, $from)) {

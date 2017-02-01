@@ -28,7 +28,7 @@ class User
 
         if($stmt->rowCount() > 0)
         {
-            if(password_verify($user_pass, $userRow['user_pass'])) //todo: refactor this
+            if(password_verify($user_pass, $userRow['user_pass']))
             {
 
                 $_SESSION['user_session'] = $userRow['user_id'];
