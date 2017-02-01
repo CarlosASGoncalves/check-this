@@ -12,6 +12,15 @@ use App\Core\App;
 
 class FileManagementController
 {
+
+    public function index()
+    {
+        $files = App::get('database')->selectFiles('filestore', ['id', 'filename', 'mimetype', 'description']);
+
+        return view('pages/upload/index', compact('files'));
+
+    }
+
     public function uploads()
     {
 
@@ -36,15 +45,6 @@ class FileManagementController
         return redirect('upload');
 
     }
-
-    public function index()
-    {
-        $files = App::get('database')->selectFiles('filestore', ['id', 'filename', 'mimetype', 'description']);
-
-        return view('upload', compact('files'));
-
-    }
-
 
     public function delete()
     {

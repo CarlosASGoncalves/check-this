@@ -8,18 +8,18 @@ use App\Core\App;
 class UsersController
 {
     /**
-     * Show all users.
+     * Show all names/users.
      */
     public function index()
     {
         $users = App::get('database')->selectAll('users');
 
-        return view('users', compact('users'));
+        return view('pages/names/index', compact('users'));
 
     }
 
     /**
-     * Store a new user in the database.
+     * Store a new name/user in the database.
      */
     public function store()
     {

@@ -8,7 +8,7 @@
 
             <h1 class="page-header text-center">Contact Form</h1>
 
-            <form class="form-horizontal" role="form" method="post" action="../../../index.php">
+            <form class="form-horizontal" role="form" method="post" action="contact">
 
                 <div class="form-group">
 

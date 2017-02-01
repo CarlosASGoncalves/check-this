@@ -11,6 +11,8 @@ $router->get('upload', 'Pagescontroller@upload');
 
 $router->get('login', 'Pagescontroller@login');
 
+//contact routes
+$router->post('contact', 'ContactController@index');
 
 //users routes
 $router->get('users', 'UsersController@index');
@@ -33,9 +35,6 @@ $router->get('home', 'LoginController@home');
 
 $router->get('logout', 'LoginController@logout');
 
-
-//contact routes
-$router->post('contact', 'ContactController@index');
 
 
 

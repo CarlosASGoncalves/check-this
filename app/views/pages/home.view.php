@@ -1,4 +1,4 @@
-<?php require('partials/head.php'); ?>
+<?php require(__DIR__. '/../partials/head.php'); ?>
 
 <div class="container marketing text-center">
 
@@ -21,7 +21,7 @@
 
                     <p>...</p>
 
-                    <a href="../../index.php" class="btn btn-default" role="button">More</a></p>
+                    <a href="upload" class="btn btn-default" role="button">More</a></p>
 
                 </div>
 
@@ -43,7 +43,7 @@
 
                     <p>...</p>
 
-                    <a href="../../index.php" class="btn btn-default" role="button">More</a></p>
+                    <a href="users" class="btn btn-default" role="button">More</a></p>
 
                 </div>
 
@@ -64,7 +64,7 @@
 
                     <p>...</p>
 
-                    <a href="pages/login" class="btn btn-default" role="button">More</a></p>
+                    <a href="login" class="btn btn-default" role="button">More</a></p>
 
                 </div>
 
@@ -76,8 +76,7 @@
 
 </div>
 
-
-<?php require('partials/footer.php');
+<?php require(__DIR__. '/../partials/footer.php');
 
 
 

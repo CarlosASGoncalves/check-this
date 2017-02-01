@@ -4,66 +4,23 @@
 
     <div class="row">
 
-<!--        <div class="col-md-6 col-md-offset-3">-->
+	<div class="col-md-6 col-md-offset-3 text-center">
 
             <h1 class="page-header text-center">About <?= $label; ?></h1>
 
-            <h4>
-                <p class="text-left">
-                    General
-                </p>
-            </h4>
-            <blockquote>
-                <p>Check This! was built with PHP, MySQL and Boopstrap; following the PSR1-4 code standards.</p>
+            <p>Check This! was built with <a href="https://secure.php.net/manual/de/index.php">PHP</a>, <a href="https://www.mysql.de/">MySQL</a> and <a href="http://getbootstrap.com/">Bootstrap</a>. </p>
 
-                <p>The Frontend is based on Bootstrap, the html css javascript framwork.</p>
+            <p>The Frontend is based on <a href="http://getbootstrap.com/">Bootstrap</a>. </p>
 
-                <p>On the Backend we have a costum php framwork based on the MVC model.</p>
+            <p>The Backend is supported by a costum PHP framwork based on the MVC design pattern.</p>
 
-                <p>Puphpet helped create the proper dev enviorment to create this project.</p>
+            <p><a href="https://puphpet.com/">Puphpet</a> helped set up the LAMP Stack to create the project.</p>
 
-                <p>The Applications are simple and are base on code examples that where found in the internet and books.</p>
+            <p><a href="https://www.bplaced.net/">Bplaced</a> was the third party hosting solution chosen to publish the project online.</p>
 
-                <p>Bplaced was the therd party hosting solution choosed to publicate the project.</p>
+            <p>Check the code in the  <a href="https://github.com/CarlosASGoncalves/check-this/tree/develop">GitHub Repository</a>.</p>
 
-                <p>Localy the project was developed with php7.0 but some adaptations on the code had to be made because bplaced suppoerts php5.5.</p>
-
-                <p>Check the project built with php7.0 on my GitHub Account.</p>
-            </blockquote>
-
-            <p class="text-justify">
-                Home Page
-
-                    Have a header to start the presentation
-
-                    The bootstrap .row and grid system helps order the thumbnails for the tree apps
-            </p>
-
-            <p class="text-justify">
-                About Page
-
-                    Simple page with project description in detail
-            </p>
-
-            <p class="text-justify">
-                Contact<br>
-
-                Contact form that accepts name email text and result of 2+3  as anti-spam mecanism to garantie that the form is used by a human and not a robot.
-
-                Use of php email() to send Demo Contact Form to the admin.
-            </p>
-
-            <p class="text-justify">
-                Manage Names
-
-                    This app will save names and display the saved name in the data base in the names table
-            </p>
-
-            <p class="text-justify">
-                Manage Files
-            </p>
-
-<!--        </div>-->
+	</div>
 
     </div>
 

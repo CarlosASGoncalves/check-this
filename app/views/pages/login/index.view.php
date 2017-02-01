@@ -36,13 +36,13 @@
 
                     <div class="form-group">
 
-                        <input type="text" class="form-control" name="txt_uname_email" placeholder="Username or Email" required /> <!--todo: use htmlspecialchars-->
+                        <input type="text" class="form-control" name="txt_uname_email" placeholder="User: test" required /> <!--todo: use htmlspecialchars-->
 
                     </div>
 
                     <div class="form-group">
 
-                        <input type="password" class="form-control" name="txt_password" placeholder="Your Password" required /> <!--todo: use htmlspecialchars-->
+                        <input type="password" class="form-control" name="txt_password" placeholder="Password: 123" required /> <!--todo: use htmlspecialchars-->
 
                     </div>
 

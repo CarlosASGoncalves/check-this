@@ -11,7 +11,7 @@ class Pagescontroller extends User
     public function home()
     {
        
-       return view('pages/index');
+       return view('pages/home');
         
     }
 
@@ -34,7 +34,7 @@ class Pagescontroller extends User
     public function users()
     {
 
-        return view('pages/users');
+        return view('pages/names/index');
 
 
     }
@@ -42,7 +42,7 @@ class Pagescontroller extends User
     public function upload()
     {
 
-        return view('pages/upload');
+        return view('pages/upload/index');
 
 
     }

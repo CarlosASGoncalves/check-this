@@ -18,7 +18,7 @@
 
             </div>
 
-            <label><a href="../../../../index.php"><i class="glyphicon glyphicon-log-out"></i> SIGN OUT</a></label>
+            <label><a href="logout"><i class="glyphicon glyphicon-log-out"></i> SIGN OUT</a></label>
 
         </div>
 

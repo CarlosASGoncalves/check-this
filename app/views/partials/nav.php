@@ -26,7 +26,7 @@
 
                         <a href="#" class="dropdown-toggle" id="drop3" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
 
-                            Apps  <span class="caret"></span>
+                            WebApps  <span class="caret"></span>
 
                         </a>
 
